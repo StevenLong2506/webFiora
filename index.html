@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
 
         <div class="header-block">
@@ -302,7 +304,7 @@
                     </div>
                 </div>
 
-                <div class="product">
+                <div class="product matchachoco-cake">
                     <div class="product-img-block">
                         <img src="./assets/img/cakes/banhsinhnhat/whitechocomatcha.jpg"
                             alt="White Chocolate Matcha Mousse Cake" class="product-img">
@@ -877,6 +879,39 @@
         </div>
     </section>
 
+
+    <section class="popup popup-info-product">
+        <div class="info-product-block">
+            <div class="info-product-title-block">
+                <p>Chi tiết sản phẩm</p>
+                <div class="popup-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="info-product-main-block">
+                <div class="info-product-img-block">
+                    <img src="./assets/img/cakes/banhsinhnhat/whitechocomatcha.jpg"
+                        alt="White Chocolate Matcha Mousse Cake">
+                </div>
+
+                <div class="info-product-description-block">
+                    <p>Tên: White Chocolate Matcha Mousse Cake</p>
+                    <p>Giá: 350,000đ</p>
+                    <p>Mã sản phẩm: CH003</p>
+                    <p>Mô tả: Bánh ngọt, thơm vị chocolate trắng, vị matcha thanh mát.</p>
+                    <p>Số lượng: <span>-</span> 1 <span>+</span></p>
+                    <div class="info-product-btn-block">
+                        <button class="add-btn">Thêm vào giỏ hàng</button>
+                        <button class="buynow-btn">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <script>
         // NHẤN TẮT-MỞ Ở PHẦN ĐĂNG NHẬP & ĐĂNG KÝ
 
@@ -924,6 +959,20 @@
         })
         closeFormShopping.addEventListener('click', function () {
             popupShoppingForm.style.display = 'none';
+        })
+
+
+
+        //NHẤN TẮT-MỞ PHẦN SẢN PHẨM
+        const productBtn = document.querySelector('.matchachoco-cake .btn-product-block')
+        const popupInfoProductForm = document.querySelector('.popup-info-product');
+        const closeFormInfoProduct = popupInfoProductForm.querySelector('.popup-close');
+
+        productBtn.addEventListener('click',function(){
+            popupInfoProductForm.style.display='flex';
+        })
+        closeFormInfoProduct.addEventListener('click',function(){
+            popupInfoProductForm.style.display= 'none';
         })
     </script>
 

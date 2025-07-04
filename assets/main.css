@@ -227,8 +227,7 @@ main {
     margin-top: -6px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
-    max-width: 202px;
+    max-width: 200px;
 }
 
 .product-name {
@@ -295,7 +294,7 @@ main {
     border-radius: 10px;
 }
 
-.look-more-btn:hover{
+.look-more-btn:hover {
     opacity: 0.6;
     cursor: pointer;
 }
@@ -751,5 +750,79 @@ footer::before {
 
 .shopping-form-btn>button:hover {
     background-color: #9d9494;
+    cursor: pointer;
+}
+
+
+/* FORM HIỆN THÔNG TIN SP */
+
+.info-product-block {
+    width: 900px;
+    min-height: 600px;
+}
+
+.info-product-title-block {
+    background-color: #832a4e;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px 0;
+    position: relative;
+}
+
+.info-product-main-block {
+    background-color: #fffef8;
+    padding: 40px 20px;
+    display: flex;
+}
+
+.info-product-img-block {
+    width: 40%;
+    padding: 0 20px;
+}
+
+.info-product-img-block img {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 20px;
+}
+
+.info-product-description-block{
+    width:60%;
+}
+
+.info-product-description-block p{
+    font-weight: 700;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.info-product-description-block p span:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.info-product-btn-block{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.info-product-btn-block .add-btn,
+.info-product-btn-block .buynow-btn{
+    background-color: #832a4e;
+    color: #fff;
+    border:none;
+    padding:12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.info-product-btn-block .add-btn:hover,
+.info-product-btn-block .buynow-btn:hover{
+    opacity: 0.6;
     cursor: pointer;
 }
